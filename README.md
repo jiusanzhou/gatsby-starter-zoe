@@ -1,4 +1,4 @@
-<h1 align="center">1小时指南</h>
+<h1 align="center">1小时指南</h1>
 <p align="center">
 <img src="https://avatars2.githubusercontent.com/u/44012811?s=200&v=4" alt="1 Hour Guide" width="200" height="200">
 </p>
@@ -24,7 +24,7 @@
 
 **其他反馈沟通社群**
 
-|<img src="https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg" width="100px;"/><br /><b>WeChat Group</b><br /><sub>添加微信号，发送`1hour guide`</sub>|||
+|<img src="https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg" width="100px;"/><br /><b>WeChat Group</b><br /><sub>添加微信号，发送`1hour guide`</sub>||||
 |:-:|:-:|:-:|:-:|
 
 ## :coffee: 支持我们
