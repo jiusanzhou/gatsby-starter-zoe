@@ -27,8 +27,8 @@
 
 **其他反馈沟通社群**
 
-|<img src="https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg" width="100px;"/><br /><b>WeChat Group</b><br /><sub>添加微信号，发送`1hour guide`</sub>||||
-|:-:|:-:|:-:|:-:|
+|<img src="https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg" width="100px;"/><br /><b>WeChat Group</b><br /><sub>添加微信号，发送`1hour guide`</sub>|
+|:-:|
 
 ## :coffee: 支持我们
 
@@ -49,9 +49,9 @@
 
 ## :copyright: 共创协议
 
-
-![cc logo](https://creativecommons.org/images/deed/cc_icon_black_x2.png) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io?ref=badge_shield)
- ![](https://creativecommons.org/images/deed/attribution_icon_black_x2.png)
+![cc logo](https://creativecommons.org/images/deed/cc_icon_black_x2.png)
+![](https://creativecommons.org/images/deed/attribution_icon_black_x2.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io?ref=badge_shield)
 
 
 社区所有内容如无作者的特殊说明，均遵循[《署名 4.0 国际  (CC BY 4.0)》协议](https://creativecommons.org/licenses/by/4.0/deed.zh)。
