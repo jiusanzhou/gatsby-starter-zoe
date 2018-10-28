@@ -7,11 +7,12 @@
 </h3>
 <p align="center"><strong>你的一生只有约3万天，请每天花5分钟了解自己，1小时了解世界。<br>在行动的路上，你可能需要《1小时指南》。</strong></p>
 <p align="center">
-	<a href="https://twitter.com/1hour_guide" title="@1 hour guide on Twitter"><img src="https://img.shields.io/badge/twitter-@1hour_guide-55acee.svg?style=flat-square" alt="@1 hour guide on Twitter"></a>
 	<a href="https://1hour.guide" title="1 Hour Guide Home"><img src="https://img.shields.io/badge/1hour-guide-ff69b4.svg?style=flat-square" alt="1 Hour Guide Home"></a>
 	<a href="#" title="1hour.guide on Sourcegraph"><img src="https://sourcegraph.com/github.com/1-hour/1-hour.github.io/-/badge.svg?style=flat-square" alt="1hour.guide on Sourcegraph"></a>
-	<br />
 	<a href="#" title="Donate 1hour.guide"><img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate 1hour.guide"></a>
+	<a href="https://app.fossa.io/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io?ref=badge_shield" title="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io.svg?type=shield)"></a>
+	<br />
+	<a href="https://twitter.com/1hour_guide" title="@1 hour guide on Twitter"><img src="https://img.shields.io/badge/twitter-@1hour_guide-55acee.svg?style=flat-square" alt="@1 hour guide on Twitter"></a>
 </p>
 
 ## :sparkles: 这是什么？
@@ -51,7 +52,6 @@
 
 ![cc logo](https://creativecommons.org/images/deed/cc_icon_black_x2.png)
 ![](https://creativecommons.org/images/deed/attribution_icon_black_x2.png)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F1-hour%2F1-hour.github.io?ref=badge_shield)
 
 
 社区所有内容如无作者的特殊说明，均遵循[《署名 4.0 国际  (CC BY 4.0)》协议](https://creativecommons.org/licenses/by/4.0/deed.zh)。
