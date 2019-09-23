@@ -1,11 +1,10 @@
 import React from "react"
-import { css } from "linaria"
-
+import { css, cx } from "linaria"
 import { Link } from "gatsby"
 
 import { min, max } from "../utils/media"
-
 import Button from "../components/button"
+import Logo from "../views/logo"
 import Section from "../components/section"
 import { Socials } from "../components/socials"
 
@@ -94,8 +93,9 @@ const styles = {
         }
     `,
     logo: css`
-        color: #fff;
-        width: max-content;
+        span {
+            color: #fff;
+        }
     `,
     links: css`
         display: grid;
@@ -171,7 +171,7 @@ const Footer = ( { children } ) => {
     return <div className={ styles.footer }>
         {/* back to top button */}
         <Button className={ styles.gotop } href="#">
-            <svg width="16" height="22"><path d="M8 21V1M1 8l7-7 7 7" fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            <svg width="16" height="22"><path d="M8 21V1M1 8l7-7 7 7" fill="none" fillRule="evenodd" stroke="#FFF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
         </Button>
 
         {/* extend section */}
@@ -179,7 +179,7 @@ const Footer = ( { children } ) => {
 
         {/* footer main section */}
         <section className={ styles.main }>
-            <Link className={ styles.logo } to="/">1hour guide</Link>
+            <Logo className={ styles.logo } />
             {/* TODO: use links to section generate grid layout */}
             <nav className={ styles.links }>
                 { links.map(i => <div>

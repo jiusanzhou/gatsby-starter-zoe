@@ -1,13 +1,10 @@
 import React from "react"
 import { css, cx } from "linaria"
 
-import { Link } from "gatsby"
-
 import { min, max } from "../utils/media"
 
-import Button from "../components/button"
-
-import Nav from "../components/nav"
+import Logo from "../views/logo"
+import Nav from "../views/nav"
 
 import PropTypes from "prop-types"
 
@@ -46,64 +43,6 @@ const stylesHeader = css`
         grid-template-rows:44px auto
     `)}
 `
-const styles = {
-
-    // Logo
-    log: css`
-        grid-area: logo;
-        z-index: 8;
-    `,
-    logoImg: css`
-        max-width: 6.25rem;
-        height: 30px;
-        margin-top: .5rem;
-    `,
-}
-
-const Logo = () => {
-    return <div className={ styles.logo }>
-        <Link to="/" >
-            <img className={ styles.logoImg } src="https://avatars2.githubusercontent.com/u/44012811?s=200&v=4" />
-        </Link>
-    </div>
-}
-
-
-const menus = [
-    {
-        title: 'Home',
-        href: '/'
-    },
-    {
-        title: 'About',
-        href: '/about'
-    },
-    {
-        title: 'Services',
-        href: '/services',
-        items: [
-            {
-                title: 'Golang turorials',
-                href: '/golang',
-            },
-            {
-                title: 'Frontend from zero',
-                href: '/fronend',
-            }
-        ]
-    },
-    {
-        title: 'Blog',
-        href: '/blog'
-    }
-]
-
-const Right = ( { children } ) => {
-    return <div className={ styles.right }>
-        <Button className={ styles.bigContact } text="Estimate project" />
-        {children}
-    </div>
-}
 
 const Header = ({ onToggle }) => {
     return <div className={ stylesHeader }>
@@ -113,8 +52,8 @@ const Header = ({ onToggle }) => {
 }
 
 Header.propTypes = {
-    menuOpend: Boolean,
-    onToggle: Function,
+    menuOpend: PropTypes.bool,
+    onToggle: PropTypes.func,
 }
 
 export default Header

@@ -26,9 +26,9 @@ Action.propTypes = {
     description: PropTypes.node,
     children: PropTypes.node,
     position: PropTypes.oneOf(['top', 'bottom']),
-    to: String,
-    onClick: Function,
-    className: String,
+    to: PropTypes.string,
+    onClick: PropTypes.func,
+    className: PropTypes.string,
 }
 
 export default Action

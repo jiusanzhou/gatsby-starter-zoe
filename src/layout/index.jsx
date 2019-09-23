@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 import { min, max } from "../utils/media"
 
-import SEO from "../components/seo"
+import SEO from "../views/seo"
 
 import Header from "./header"
 import Footer from "./footer"

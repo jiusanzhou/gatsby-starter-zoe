@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import PropTypes from "prop-types"
 import { css, cx } from "linaria"
 
 import { Link } from "gatsby"
@@ -7,42 +8,6 @@ import Action from "./action"
 import Togger from "./togger"
 
 import { min, max } from "../utils/media"
-
-const _data = {
-    items: [
-        {
-            title: 'Home',
-            href: '/'
-        },
-        {
-            title: 'About',
-            href: '/about'
-        },
-        {
-            title: 'Services',
-            href: '/services',
-            items: [
-                {
-                    title: 'Golang turorials',
-                    href: '/golang',
-                },
-                {
-                    title: 'Frontend from zero',
-                    href: '/fronend',
-                }
-            ]
-        },
-        {
-            title: 'Blog',
-            href: '/blog'
-        }
-    ],
-    action: {
-        title: 'Book a call',
-        description: <>Get a <strong>free</strong> one-to-one consultation.</>,
-        href: '/',
-    }
-}
 
 const stylesNav = css`
     grid-area: nav;
@@ -163,19 +128,29 @@ const stylesSubNav = css`
     }
 `
 
-const Nav = ({ onToggle, navClassName, itemActiveClassName, minWidth = 1085 }) => {
-    const {
-        items,
-        action,
-        // defaultOpened,
-    } = _data
+const stylesAction = css`
+    justify-self: end;
+    ${min(1085, `
+        p {
+            display: none;
+        }
+    `)}
+
+    ${max(768, `
+        a {
+            width: 100%;
+        }
+    `)}
+`
+
+const Nav = ({ menu, action, onToggle, navClassName, itemActiveClassName, minWidth = 1085 }) => {
 
     const [ opened, setOpened ] = useState(false)
 
     return <>
     <nav className={ cx(stylesNav, navClassName, opened?stylesNavActive:'') }>
         <ul>
-            { items.map((item, idx) => <li key={ `${idx}-${item.title}`} >
+            { menu.map((item, idx) => <li key={ `${idx}-${item.title}`} >
                 <Link to={ item.href } className={ stylesNavItem } activeClassName={ cx(stylesItemActive, itemActiveClassName) }>{ item.title }</Link>
                 {/* sub items */}
                 { !item.items ? null:<ul className={ stylesSubNav }>
@@ -185,30 +160,19 @@ const Nav = ({ onToggle, navClassName, itemActiveClassName, minWidth = 1085 }) =
                 </ul> }
             </li>) }
         </ul>
-        { !action?null:<Action className={ css`
-            justify-self: end;
-            ${min(1085, `
-                p {
-                    display: none;
-                }
-            `)}
-
-            ${max(768, `
-                a {
-                    width: 100%;
-                }
-            `)}
-        ` } to={ action.href } description={ action.description }>{ action.title }</Action> }
+        { !action?null:<Action className={ stylesAction } to={ action.href } description={ action.description }>{ action.title }</Action> }
     </nav>
     <Togger opened = { opened } onToggle={ () => { setOpened(!opened); onToggle && onToggle(!opened) } } />
     </>
 }
 
 Nav.protoTypes = {
-    minWidth: Number,
-    onToggle: Function,
-    navClassName: String,
-    itemActiveClassName: String,
+    menu: PropTypes.object,
+    action: PropTypes.object,
+    minWidth: PropTypes.number,
+    onToggle: PropTypes.func,
+    navClassName: PropTypes.string,
+    itemActiveClassName: PropTypes.string,
 }
 
 export default Nav

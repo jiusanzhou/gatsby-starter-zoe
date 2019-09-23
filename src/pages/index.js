@@ -29,7 +29,6 @@ const IndexPage = () => (
       description="Static websites and Progressive Web Applications are secure, scalable, SEO-friendly, and even up to 10x faster.">
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
-        <Link to="/page-2/">Go to page 2</Link>
       </div>
     </Section>
     <Section

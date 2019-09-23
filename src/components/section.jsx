@@ -145,8 +145,6 @@ const Section = ({
         buildStyles[`--section-theme-${key}`] = themes[theme][key]
     })
 
-    console.log(buildStyles)
-
     return <section className={ cx(styles.section, className, extendStyles.section) } style={ buildStyles }>
         {needHeader?<header className={ cx(styles.header) } style={ { textAlign } }>
             { subTitle?<h3 className={ styles.subTitle }>{ subTitle }</h3>:null }
@@ -167,17 +165,17 @@ const Section = ({
 }
 
 Section.propTypes = {
-    title: String,
-    subTitle: String,
-    description: String,
+    title: PropTypes.string,
+    subTitle: PropTypes.string,
+    description: PropTypes.string,
     children: PropTypes.node,
-    subDescription: String,
-    action: Object,
+    subDescription: PropTypes.string,
+    action: PropTypes.object,
     position: PropTypes.oneOf(["left", "right", "top", "bottom"]),
     borderRadius: PropTypes.oneOfType([Number, String]),
-    background: String,
-    className: String,
-    theme: String,
+    background: PropTypes.string,
+    className: PropTypes.string,
+    theme: PropTypes.string,
 }
 
 export default Section
