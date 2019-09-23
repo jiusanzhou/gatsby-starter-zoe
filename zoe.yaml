@@ -1,0 +1,35 @@
+title: 1小时指南
+description: 每天你应该花3分钟了解自己，1小时了解世界，可能你需要《1小时指南》。
+author: 周筱鲁 <hi@zoe.im>
+lang: zh-CN
+
+plugins:
+- gatsby-source-filesystem:
+    name: images
+    path: ${__dirname}/src/images
+
+- gatsby-plugin-google-analytics:
+    trackingId: 'xxxx'
+    respectDNT: true
+
+- gatsby-plugin-web-font-loader:
+    google:
+      families: ['Poppins', 'Recoleta', 'Fredoka One', 'Cabin', 'Open Sans']
+
+- gatsby-plugin-manifest:
+    name: ${zoe.title}
+    short_name: ${zoe.title}
+    start_url: /
+    background_color: "#663399"
+    theme_color: "#663399"
+    display: minimal-ui
+    icon: src/images/gatsby-icon.png
+
+- gatsby-plugin-react-helmet
+- gatsby-transformer-sharp
+- gatsby-plugin-theme-ui
+- gatsby-plugin-linaria
+- gatsby-plugin-offline
+- gatsby-plugin-emotion
+- gatsby-plugin-sharp
+- gatsby-plugin-less
