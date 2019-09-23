@@ -9,6 +9,18 @@ const useSiteMetadata = () => {
             description
             author
             lang
+            logo {
+              name
+              img
+            }
+            menu {
+              title
+              href
+              items {
+                title
+                href
+              }
+            }
         }
       }
     }
