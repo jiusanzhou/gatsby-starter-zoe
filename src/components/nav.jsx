@@ -192,6 +192,12 @@ const Nav = ({ onToggle, navClassName, itemActiveClassName, minWidth = 1085 }) =
                     display: none;
                 }
             `)}
+
+            ${max(768, `
+                a {
+                    width: 100%;
+                }
+            `)}
         ` } to={ action.href } description={ action.description }>{ action.title }</Action> }
     </nav>
     <Togger opened = { opened } onToggle={ () => { setOpened(!opened); onToggle && onToggle(!opened) } } />

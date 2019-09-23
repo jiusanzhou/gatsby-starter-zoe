@@ -157,6 +157,8 @@ const _data = {
         twitter: 'jiusanzhou',
         facebook: 'jiusanzhou',
         github: 'jiusanzhou',
+        telegram: 'jiusanzhou',
+        email: 'hi@zoe.im',
     }
 }
 

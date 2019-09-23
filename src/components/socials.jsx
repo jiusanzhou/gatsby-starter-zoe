@@ -3,7 +3,14 @@ import { Link } from "gatsby"
 import { css } from "linaria"
 import { min, max } from "../utils/media"
 
-import { IoLogoFacebook, IoLogoTwitter, IoLogoGithub, IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import {
+    IoLogoFacebook, IoLogoTwitter,
+    IoLogoGithub, IoLogoLinkedin, IoMdMail,
+} from "react-icons/io"
+
+import {
+    FaTelegramPlane
+} from "react-icons/fa"
 
 import PropTypes from "prop-types"
 
@@ -12,6 +19,7 @@ const _data_base = {
     twitter: 'https://twitter.com/',
     linkedin: 'https://www.linkedin.com/company/',
     github: 'https://github.com/',
+    telegram: 'https://t.me/',
     email: 'mailto:'
 }
 
@@ -19,6 +27,7 @@ const _data_icon = {
     facebook: IoLogoFacebook,
     linkedin: IoLogoLinkedin,
     twitter: IoLogoTwitter,
+    telegram: FaTelegramPlane,
     github: IoLogoGithub,
     email: IoMdMail,
 }
@@ -48,7 +57,7 @@ export const SocialLink = ({ type, username, base }) => {
     const icon = _data_icon[type]
     return <a className={ css`
         font-size: 1rem;
-    ` } target="_blank" href={ `${base}${username}` } title={ username }>{ React.createElement(icon) }</a>
+    ` } target="_blank" href={ `${base}${username}` } title={ username }>{ icon && React.createElement(icon) }</a>
 }
 
 export const Socials = ({ socials }) => {
