@@ -1,3 +1,10 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const yaml = require("js-yaml")
+const fs = require("fs")
+
 // define zoe configuration file. 
 const zoefile = `${__dirname}/zoe.yaml`
 
@@ -82,7 +89,7 @@ const buildConfig = (zoefile) => {
   const siteMetadata = {}
 
   // load zoe configuration from file
-  zoe = require("js-yaml").safeLoad(require("fs").readFileSync(zoefile, 'utf8'))
+  zoe = yaml.safeLoad(fs.readFileSync(zoefile, 'utf8'))
 
   // generate system keys
   let syskeys = _sysKeysMap()

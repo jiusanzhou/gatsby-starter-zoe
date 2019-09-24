@@ -4,18 +4,18 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
+const path = require('path')
+const template = require('lodash.template')
+
+// This is a shortcut so MDX can import components without gross relative paths.
+// Example: import { Image } from '$components';
+exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
-        module: {
-            rules: [
-                {  
-                    test: /\.svg$/,
-                    use: {
-                        loader: 'svg-react-loader',
-                    }
-                }
-            ]
-        },
+      resolve: {
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        alias: { $components: path.resolve(__dirname, 'src/components') },
+      },
     })
 }
+
+
