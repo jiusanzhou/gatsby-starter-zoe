@@ -3,6 +3,7 @@ import { css, cx } from "linaria"
 import { Link } from "gatsby"
 
 import { min, max } from "../utils/media"
+import { useSiteMetadata } from "../utils/hooks"
 import Button from "../components/button"
 import Logo from "../views/logo"
 import Section from "../components/section"
@@ -163,10 +164,9 @@ const _data = {
 }
 
 const Footer = ( { children } ) => {
-    let {
-        copyright,
-        links,
-    } = _data
+
+    const siteMeta = useSiteMetadata()
+    const { copyright, links, socials } = siteMeta
 
     return <div className={ styles.footer }>
         {/* back to top button */}
@@ -192,7 +192,7 @@ const Footer = ( { children } ) => {
                 </div>) }
 
                 {/* social links */}
-                <Socials socials={ _data.socials } />
+                <Socials socials={ socials } />
             </nav>
         </section>
 

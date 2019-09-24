@@ -7,11 +7,25 @@ const useSiteMetadata = () => {
         siteMetadata {
             title
             description
-            author
+            url
             lang
+            author {
+              name
+              minibio
+              avatar
+              email
+            }
             logo {
               name
               img
+            }
+            socials {          
+              email
+              facebook
+              github
+              telegram
+              twitter
+              linkedin
             }
             menu {
               title
@@ -20,6 +34,16 @@ const useSiteMetadata = () => {
                 title
                 href
               }
+            }
+            links {
+              title
+              items {
+                title
+                href
+              }
+            }
+            copyright {
+              content
             }
         }
       }

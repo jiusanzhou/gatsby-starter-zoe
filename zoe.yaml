@@ -1,26 +1,61 @@
 title: 1小时指南
 description: 每天你应该花3分钟了解自己，1小时了解世界，可能你需要《1小时指南》。
-author: 周筱鲁 <hi@zoe.im>
-lang: zh-CN
-
+url: https://1hour.guide
 logo:
-    name: 1Hour
-    img: https://avatars2.githubusercontent.com/u/44012811?s=200&v=4
+  name: 1Hour
+  img: https://avatars2.githubusercontent.com/u/44012811?s=200&v=4
+lang: zh-CN
+author:
+  name: 周筱鲁
+  email: hi@zoe.im
+  avatar: https://avatars1.githubusercontent.com/u/2942042?s=200&v=4
+  minibio: 知行合一
+organization:
+  name: ${zoe.title}
+  url: ${zoe.url}
+  logo: ${zoe.logo.img}
+copyright:
+  content: © 1hour.guide - All rights reserved. Made with ❤️ by Zoe
+socials:
+  email: hi@zoe.im
+  github: jiusanzhou
+  twitter: jiusanzhou
+  facebook: jiusanzhou
+  telegram: jiusanzhou
+  linkedin: in/johnzoe
+
+links:
+- title: Company
+  items:
+  - title: Home
+    href: /
+  - title: About
+    href: /about
+  - title: Blog
+    href: /blog
+
+- title: Services
+  items: 
+  - title: Golang
+    href: /golang
+  - title: More >>>
+    href: /projects
+
 
 menu:
 - title: Home
-  href: '/'
+  href: /
 - title: About
-  href: '/about'
+  href: /about
 - title: Services
-  href: '/services'
+  href: /services
   items:
   - title: Golang turorials
-    href: '/services/golang'
+    href: /services/golang
   - title: Frontend from zero
-    href: '/services/frontend'
+    href: /services/frontend
 - title: Blog
-  href: '/blog'
+  href: /blog
 
 plugins:
 - gatsby-source-filesystem:

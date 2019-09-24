@@ -17,7 +17,7 @@ import PropTypes from "prop-types"
 const _data_base = {
     facebook: 'https://www.facebook.com/',
     twitter: 'https://twitter.com/',
-    linkedin: 'https://www.linkedin.com/company/',
+    linkedin: 'https://www.linkedin.com/',
     github: 'https://github.com/',
     telegram: 'https://t.me/',
     email: 'mailto:'
