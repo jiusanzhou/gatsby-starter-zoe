@@ -7,7 +7,9 @@
   "dependencies": {
     "@emotion/core": "^10.0.17",
     "@mdx-js/react": "^1.4.3",
+    "@rebass/preset": "^4.0.5",
     "bulma": "^0.7.5",
+    "emotion-theming": "^10.0.19",
     "gatsby": "^2.15.7",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-emotion": "^4.1.5",
@@ -34,6 +36,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-tippy": "^1.2.3",
+    "rebass": "^4.0.6",
     "styled-components": "^4.3.2",
     "styled-media-query": "^2.1.2",
     "tailwindcss": "^1.1.2",
