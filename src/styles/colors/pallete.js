@@ -26,6 +26,7 @@ export default {
     lightest: spectrum.red[lightest],
     light: spectrum.red[light],
     base: spectrum.red[base],
+    main: "#da3654",
     dark: spectrum.red[dark],
     darkest: darkest(spectrum.red[dark]),
   },

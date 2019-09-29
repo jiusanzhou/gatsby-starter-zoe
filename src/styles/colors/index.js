@@ -1,12 +1,16 @@
 // @flow
-import { rgba, darken } from 'polished';
+import { rgba, darken } from 'polished'
 
-import spectrum from './spectrum';
-import pallete from './pallete';
+import spectrum from './spectrum'
+import pallete from './pallete'
 
 export default {
-  pallete: pallete, //for use on objects and for extended background options
+  primary: pallete.red.main,
+
+  pallete: pallete, // for use on objects and for extended background options
+
   background: {
+    primary: pallete.red.base,
     default: spectrum.white,
     tint1: spectrum.neutral[0],
     tint2: pallete.neutral.light,
@@ -61,5 +65,11 @@ export default {
     info: pallete.cyan.base,
     danger: pallete.red.base,
     warning: pallete.yellow.base,
+  },
+
+  modes: {
+    dark: {
+
+    }
   },
 }

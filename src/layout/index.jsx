@@ -1,12 +1,12 @@
 import React, { useState } from "react"
+import PropTypes from "prop-types"
 import { css, cx } from "linaria"
 
-import PropTypes from "prop-types"
+import { ThemeProvider } from 'emotion-theming'
 
+import theme from '../styles/theme'
 import { min, max } from "../utils/media"
-
 import SEO from "../views/seo"
-
 import Header from "./header"
 import Footer from "./footer"
 
@@ -56,7 +56,7 @@ const stylesFooter = css`
 
 const Layout = ({ children, header, footer, extendFooter }) => {
     const [ opened, setOpened ] = useState(false)
-    return <>
+    return <ThemeProvider theme={theme}>
         <SEO />
         <header className={ cx(stylesHeader, opened?css`
             height: 100vh;
@@ -70,7 +70,7 @@ const Layout = ({ children, header, footer, extendFooter }) => {
         <footer className={ stylesFooter }>
             <Footer>{ extendFooter }</Footer>
         </footer>
-    </>
+    </ThemeProvider>
 }
 
 Layout.propTypes = {
